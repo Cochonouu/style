@@ -1,8 +1,65 @@
-.mon-element {
-  width: 400px;
-  height: 300px;
-  background-image: url('https://cdn.pixabay.com/photo/2024/08/01/18/20/anime-8937915_1280.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+#app-content {
+    /*max-width: none !important;*/
+    background-image: url('goban.jpg');
+    background-size: contain;
 }
+
+.avatar-container, .ratings-row, .ratings-container, .col-sm-12, .col-sm-4 {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.avatar-container .Player {
+    color: red !important;
+    font-family: 'Nosifer Caps', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.col-sm-12, .col-sm-8 > .Card {
+    margin-left: -10px;
+}
+
+.col-sm-8 > .Card {
+    background-color: transparent !important;
+    border-width: 0;
+    box-shadow: none;
+}
+
+.col-sm-12 > h2, .col-sm-4 > h2 {
+    font-family: 'Nosifer Caps', sans-serif;
+    color: red !important;
+    padding-left: 16px;
+}
+
+.ratings-container > h3 {
+    font-family: 'Nosifer Caps', sans-serif;
+    color: red !important;
+}
+
+.about-container {
+    text-align: center;
+}
+
+.ratings-container {
+    padding: 16px;
+}
+
+body.light .User .ratings-grid .rating-entry.unset {
+    color: black !important;
+}
+
+.about-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.User.container > .row {
+    margin-top: 30px;
+}
+
+/*
+KUBECONFIG=~/.kube/k8s-1-17-11-do-1-lon1-1601663120359-kubeconfig.yaml kubectl cp -n keilinfo-master ogs.css keilinfo-front-567ddf9657-q8vz4:/app/
+*/
